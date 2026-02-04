@@ -1,8 +1,8 @@
---створення БД
+п»ї--СЃС‚РІРѕСЂРµРЅРЅСЏ Р‘Р”
 CREATE DATABASE pv521
 
 GO
---видалення БД
+--РІРёРґР°Р»РµРЅРЅСЏ Р‘Р”
 DROP DATABASE pv521;
 
 GO
@@ -21,7 +21,7 @@ CREATE TABLE students(
 );
 
 GO
---Додавання даних
+--Р”РѕРґР°РІР°РЅРЅСЏ РґР°РЅРёС…
 INSERT INTO students (name, age) 
 VALUES ('Bob', 25),('Alex', 20),('Bogdan',30),('John',12),('Alice',25);
 
@@ -32,14 +32,14 @@ GO
 DELETE FROM students WHERE age!=20;
 
 GO
---Виборка даних з таблиці students
-SELECT name AS назва, age AS вік FROM students WHERE name LIKE 'A%' ;
---Додати ще 2 студента і зробити виборку
+--Р’РёР±РѕСЂРєР° РґР°РЅРёС… Р· С‚Р°Р±Р»РёС†С– students
+SELECT name AS РЅР°Р·РІР°, age AS РІС–Рє FROM students WHERE name LIKE 'A%' ;
+--Р”РѕРґР°С‚Рё С‰Рµ  2 СЃС‚СѓРґРµРЅС‚Р° С– Р·СЂРѕР±РёС‚Рё РІРёР±РѕСЂРєСѓ
 
 TRUNCATE TABLE students;
 
 DELETE FROM students;
-print(LEN('  hjg '))
+
 
 
 --CRUD operation- 
